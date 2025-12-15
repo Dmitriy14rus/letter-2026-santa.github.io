@@ -128,7 +128,7 @@ address {
 /* ЗАГАЛОВКИ */
 h1 {
     font-family: var(--font-family);
-    font-weight: 700;
+    font-weight: 600;
     font-size: 78px;
     color: var(--white);
 }
@@ -306,5 +306,6 @@ padding: 20px;
     color: #990505;
 
 }
+
 
 

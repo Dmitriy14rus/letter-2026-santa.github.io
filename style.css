@@ -128,7 +128,7 @@ address {
 /* ЗАГАЛОВКИ */
 h1 {
     font-family: var(--font-family);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 78px;
     color: var(--white);
 }
@@ -258,7 +258,7 @@ a {
 
 
 .letter {
-
+    z-index: 1;
     background: #f7dbab;
 }
 
@@ -275,7 +275,10 @@ a {
     border-radius: 20px;
     padding: 0px 50px 50px;
     max-width: 700px;
+    position: relative;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
+
 
 
 .letter-section {}
@@ -304,8 +307,59 @@ padding: 20px;
 }
 .letter__li span{
     color: #990505;
-
 }
+
+
+.letter {
+    position: relative;
+    padding: 40px; /* увеличиваем внутренний отступ, чтобы гирлянда не перекрывала текст */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+
+
+body {
+            margin: 0;
+            height: 100vh;
+            /* overflow: hidden; */
+            position: relative;
+        }
+
+        .snowflake {
+            color: #fff;
+            font-size: 1.5em;
+            font-family: Arial, sans-serif;
+            text-shadow: 0 0 5px #aaa;
+            position: absolute;
+            top: -10%;
+            user-select: none;
+            pointer-events: none;
+            animation: fall linear infinite, sway ease-in-out infinite alternate;
+        }
+
+        @keyframes fall {
+            0% { top: -10%; }
+            100% { top: 100%; }
+        }
+
+        @keyframes sway {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(100px); }
+        }
+
+        /* Генерируем много снежинок с разными параметрами */
+        .snowflake:nth-child(1) { left: 10%; animation-duration: 10s, 4s; animation-delay: 0s, 0s; font-size: 1em; }
+        .snowflake:nth-child(2) { left: 20%; animation-duration: 15s, 6s; animation-delay: 1s, 1s; font-size: 2em; }
+        .snowflake:nth-child(3) { left: 30%; animation-duration: 12s, 5s; animation-delay: 2s, 0s; font-size: 1.5em; }
+        .snowflake:nth-child(4) { left: 40%; animation-duration: 18s, 7s; animation-delay: 0s, 2s; font-size: 1.2em; }
+        .snowflake:nth-child(5) { left: 50%; animation-duration: 14s, 4s; animation-delay: 3s, 1s; font-size: 2.5em; }
+        .snowflake:nth-child(6) { left: 60%; animation-duration: 20s, 8s; animation-delay: 1s, 3s; font-size: 1.8em; }
+        .snowflake:nth-child(7) { left: 70%; animation-duration: 11s, 5s; animation-delay: 4s, 0s; font-size: 1.3em; }
+        .snowflake:nth-child(8) { left: 80%; animation-duration: 16s, 6s; animation-delay: 2s, 2s; font-size: 2em; }
+        .snowflake:nth-child(9) { left: 90%; animation-duration: 13s, 7s; animation-delay: 0s, 4s; font-size: 1.7em; }
+        .snowflake:nth-child(10) { left: 5%; animation-duration: 17s, 5s; animation-delay: 5s, 1s; font-size: 2.2em; }
+        /* Добавьте больше, если нужно (до 50–100 для густого снега) *
+
 
 
 

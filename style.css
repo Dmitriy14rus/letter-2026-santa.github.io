@@ -121,7 +121,7 @@ address {
 }
 
 .bg {
-    background: url(../img/bad-santa.jpg) no-repeat center fixed;
+    background: url(./img/bad-santa.jpg) no-repeat center fixed;
 }
 
 
@@ -304,4 +304,5 @@ padding: 20px;
 }
 .letter__li span{
     color: #990505;
+
 }
